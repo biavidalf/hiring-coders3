@@ -1,0 +1,179 @@
+/* 
+================= OVERALL SETTINGS =================
+font-family: 'Kanit', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+    background: black url(./bg.png) no-repeat center top fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.8px;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 
+================= NAV BAR =================
+*/
+header{
+    width: 100%;
+    padding: 10px 90px 0 90px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.06em;
+    letter-spacing: 1px;
+}
+header #logo img{
+    width: 200px;
+}
+header a{
+    padding: 5px 2px;
+    margin: 0 10px;
+    transition: 400ms;
+}
+header .menu a:hover{
+    color: #FF3366;
+    border-bottom: 1px solid #FF3366;
+}
+/* 
+================= NAME - ABOUT =================
+*/
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: -5px;
+}
+
+.container .name h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* TRANSICAO FLECHA */
+#arrow{
+    display: inline;
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+.fa-sort-down{
+    color: #FF3366;
+}
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+#animation{
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+    transition: 300ms;
+}
+
+#about{
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+    transition: 300ms;
+}
+
+/* 
+================= FORM =================
+*/
+#form{
+    margin-top: 20px;
+}
+.input-texto{
+    border: none;
+    width: 350px;
+    padding: 14px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    display: block;
+    margin: 10px auto;
+    background-color: rgb(218, 218, 218);
+    color: black;
+}
+button{
+    background-color: transparent;
+    border: 1px solid #FF3366;
+    padding: 13px 26px;
+    border-radius: 13px;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: 500ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+button:hover{
+    background-color: #FF3366;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+}
+
+@media(max-width: 664px){
+    header{
+        width: 100%;
+        padding: 10px 90px 0 90px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.06em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    header img{
+        width: 300px;
+    }
+    header a{
+        display: block;
+        padding: 5px 2px;
+        margin: auto;
+        transition: 400ms;
+        font-size: 1.2em;
+    }
+}
+@media(max-width: 505px){
+    .input-texto{
+        border: none;
+        width: 70%;
+        padding: 14px 20px;
+        border-radius: 15px;
+        margin-right: 10px;
+        display: block;
+        margin: 10px auto;
+        background-color: rgb(218, 218, 218);
+        color: black;
+    }
+    .container .name h1{
+        font-size: 45px;
+        font-weight: 400;
+        margin-bottom: -5px;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS Section | Hiring Coders</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Raleway&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Icons Link -->
+    <script src="https://kit.fontawesome.com/cb18e7956b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a target="_blank" href="https://vtex.com/pt-br/blog/institucional/hiring-coders-dez-mil-bolsas-dev-parcerias/"><img src="logo-vtex.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <a target="_blank" href="https://github.com/biavidalf/">Github</a> 
+            <a target="_blank" href="mailto:biavidalf@gmail.com">E-mail</a> 
+            <a target="_blank" href="https://wa.me/85997008387">Celular</a> 
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Beatriz Vidal</h1>
+                <h5>Web Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Maecenas et sapien non libero fringilla ullamcorper. 
+                    Integer fermentum lacinia malesuada. Donec suscipit 
+                    luctus dui, eget tempor purus venenatis quis. 
+                    Sed interdum dignissim suscipit. Quisque tristique auctor
+                     lacus, eu dictum eros.</p>
+            </div>
+
+            <div id="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" class="input-texto" placeholder="Seu melhor email:">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var about = document.getElementById('about');
+            about.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
