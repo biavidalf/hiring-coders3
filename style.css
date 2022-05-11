@@ -90,6 +90,7 @@ header .menu a:hover{
 }
 #animation{
     transition: 300ms;
+    animation: blink 1s steps(5, start) infinite;
 }
 .active{
     display: block !important;
