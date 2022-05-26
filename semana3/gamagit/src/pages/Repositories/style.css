@@ -1,0 +1,67 @@
+/* OVERALL SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #414955;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  /* NAVBAR  */
+  nav{
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+  }
+  .logoHC{
+      display: flex;
+      align-items: center;
+  }
+  .search{
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+    color: white;
+  }
+  .search:hover{
+    color: #61DAFB;
+    border-bottom: 2px solid #61DAFB;
+  }
+  /* OUTER CONTAINER  */
+  .container, .repositories{
+    display: flex;
+  }
+  .container{
+    width: 90%;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2em;
+  }
+  .title{
+    font-size: 1.35em;
+    margin-bottom: 20px;
+  }
+  .repositories{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .repositories > div{
+    margin-bottom: 10px;
+    background-color: #A1A7B0;
+    padding: 17px 23px;
+    border-radius: 8px;
+    width: 40%;
+  }
+  
